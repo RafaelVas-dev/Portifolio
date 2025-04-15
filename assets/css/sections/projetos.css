@@ -1,0 +1,127 @@
+/*------------- Seção Projeos --------------*/
+.project-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 5rem auto 2rem;
+}
+
+.proje-titulo{
+    display: flex;
+    align-items: center;
+}
+
+.proje-titulo h1{
+    padding: 20px;
+    font-size: 35px;
+}
+
+.proje-titulo i{
+    color: var(--letra);
+    font-size: 40px;
+}
+
+.proje-info{
+    font-size: 20px;
+    text-align: center;
+}
+
+.proje-conteiner{
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.proje-card{
+    border-radius: 10px;
+    overflow:hidden;
+    border: 1px solid var(--borda);
+    background-color: var(--fundo);
+    max-width: 26rem;
+    width: 100%;
+}
+
+.proje-image {
+    border-radius: 5px;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.proje-image img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.proje-image img:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.proje-content{
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.proje-content h3{
+    font-size: 25px;
+    color: var(--letra);
+    margin-top: 0.25rem;
+}
+
+.proje-descricao{
+    font-size: 20px;
+    margin-top: 0.25rem;
+}
+
+.proje-tags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.proje-tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 8%;
+    font-size: 0.75rem;
+    border: 1px solid var(--borda);
+}
+
+.proje-links{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.proje-links a{
+    padding: 1.2rem;
+    color: var(--branco);
+    border: 2px solid var(--borda);
+}
+
+.proje-links i{
+    display: flex;
+    align-items: center;
+    float: left;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.proje-links .button-ext{
+    background-color: var(--fundo2);
+}
+
+
+.proje-links a:hover,
+.proje-links a:focus {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}

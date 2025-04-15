@@ -1,0 +1,69 @@
+/*-------- Seção Contato -----------*/
+.cont{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    margin-top: 2.5rem;
+}
+
+.linha{
+    width: 100%;
+    background-color: var(--borda);
+    height: 1px;
+}
+
+.cont-header{
+    font-weight: 500;
+    padding: 4rem;
+}
+
+.cont-header h1{
+    font-size: 40px;
+}
+
+.cont-info{
+    font-size: 20px;
+}
+
+.link-cont{
+    width: 10%;
+    margin-left: 3rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-cont a {
+    width: 4rem;
+    height: 4rem;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--borda);
+}
+
+.link-cont a:hover{
+    background-image: linear-gradient(to right, #075E54, #128C7E, #25D366);
+}
+
+.link-cont i{
+    font-size: 30px;
+    color: var(--branco);
+}
+
+/*--------- Footer -----------*/
+
+footer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 5px;
+   background-color: var(--fundo);
+   font-size: 14px;
+}

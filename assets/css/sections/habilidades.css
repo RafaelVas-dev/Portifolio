@@ -1,0 +1,62 @@
+/*------- Seção Habilidades --------*/
+
+.habilidade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.hab-titulo{
+    font-size: 25px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.hab-titulo i{
+    color: var(--letra);
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 40px;
+}
+
+.hab-conteiner{
+    background-color: var(--fundo);
+    width: 50%;
+    height: 10rem;
+    border-radius: 10px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hab-skill{
+    margin: 2% auto;
+    height: 8rem;
+    width: 8rem;
+    text-align: center;
+}
+
+.hab-skill i{
+    font-size: 7rem;
+}
+
+.hab-skill #ht{
+    color: #ff4400;
+}
+
+.hab-skill #css{
+    color: #3f3fee;
+}
+
+.hab-skill #js{
+    color: #ffff00;
+
+}
+
+.hab-skill p{
+    font-size: 20px;
+}

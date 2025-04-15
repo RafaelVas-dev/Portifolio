@@ -1,0 +1,148 @@
+/*-------- Seção Início -------*/
+
+.inicio{
+    margin-top: -50px;
+    padding: 4rem;
+}
+
+.inicio-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.inicio-desc h1{
+    font-size: 50px;
+    padding: 5px;
+    line-height: 1.5em;
+}
+
+
+/*----- Texto Animado -----*/
+.txt-animado{
+    padding: 5px;
+    font-size: 35px;
+    line-height: 1.5em;
+}
+
+.inicio-desc span{
+    position: relative;
+    color: var(--letra);
+}
+
+.txt-animado span::before{
+    content: "";
+    animation: adjetivos 20s infinite;
+}
+
+.txt-animado span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid var(--branco);
+    right: -5px;
+    animation: cursor .8s infinite, revela 20s steps(20) infinite;
+    width: calc(100% + 5px);
+    background-color: var(--bg-color);
+}
+
+
+@keyframes revela{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 5px);
+    }
+}
+
+@keyframes cursor{
+    0%{
+        border-left: 2px solid var(--bg-color);
+    }
+}
+
+@keyframes adjetivos{
+    0%, 32%{
+        content: "Desenvolverdor Web";
+    }
+    33%,66%{
+        content: "Front-end";
+    }
+    67%,100%{
+        content: "Freelancer";
+    }
+}
+
+
+/*----- Texto -----*/
+.inicio-info{
+    font-size: 20px;
+    padding: 10px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+
+/*----- Links Social -----*/
+.links-social{
+    margin: 30px 0;
+    padding: 10px;
+}
+
+.links-social a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    color: var(--branco);
+    font-size: 2em;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--borda);
+}
+
+.links-social a:hover{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3));
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+
+/*----- Botão -----*/
+.inicio-desc .btn{
+    cursor: pointer;
+    height: 5rem;
+    width: 23rem;
+    background-color: transparent;
+    color: var(--branco);
+    font-size: 25px;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--borda);
+}
+
+.inicio-desc .btn:hover{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3));
+    transform: scale(1.05);
+    transition: all 0.4s ease;
+}
+
+
+main::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 70%;
+    top: 15%;
+    background-color: var(--fundo2);
+    filter: blur(100px);
+    z-index: 50;
+}

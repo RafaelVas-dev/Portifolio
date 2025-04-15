@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/*--------- CSS Global ---------*/
+
+:root{
+    /*paleta de cores*/
+
+    --bg-color: #0D0D0D;
+    --fundo: #2928407a;
+    --fundo2: #3e3c73;
+    --borda: #4E458C;
+    --letra: #8449BF;
+    --branco: #fff;
+
+    /*Degráde*/
+    --cor1: #7936B7;
+    --cor2: #A22895;
+    --cor3: #1bb7ff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--branco);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*--------- Header -----------*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.logo{
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--branco);
+    margin: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.logo:hover{
+    transform: scale(1.01);
+}
+
+.nav-list{
+    margin-right: 4rem;
+    padding: 20px;
+    transition: all 0.4s ease;
+}
+
+.nav-list a{
+    font-size: 1.1rem;
+    margin-left: 4rem;
+    color: var(--branco);
+    padding: 10px;
+    font-weight: 500;
+    transition: all 0.1s ease;
+}
+
+.ativo, nav a:hover{
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, var(--cor1),var(--cor2),var(--cor3));
+    border-bottom: 2px solid var(--borda);
+}
+
