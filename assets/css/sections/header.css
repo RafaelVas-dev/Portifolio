@@ -36,6 +36,10 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+}
+
 
 /*--------- Header -----------*/
 header{
@@ -47,6 +51,7 @@ header{
     left: 0;
     margin-top: 10px;
     width: 100%;
+    position: relative;
 }
 
 .logo{
@@ -67,13 +72,19 @@ header{
     transition: all 0.4s ease;
 }
 
+.nav-list ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-list a{
     font-size: 1.1rem;
     margin-left: 4rem;
     color: var(--branco);
     padding: 10px;
-    font-weight: 500;
-    transition: all 0.1s ease;
+    font-weight: 400;
+    transition: 0.1s;
 }
 
 .ativo, nav a:hover{
@@ -82,5 +93,82 @@ header{
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, var(--cor1),var(--cor2),var(--cor3));
     border-bottom: 2px solid var(--borda);
+}
+
+/*--------- Header Mobile -----------*/
+
+/* ==== Menu Mobile ==== */
+
+/* Botão */
+.btn-menu-mob{
+    display: none;
+    cursor: pointer;
+    position: relative;
+    padding: 1.5rem;
+    z-index: 1000;
+}
+
+.btn-menu-mob div{
+    background-color: var(--branco);
+    height: 3px;
+    margin: 10px 10px;
+    transition: 0.2s ease;
+}
+
+.btn-menu-mob .line-menu-mob-1{
+    width: 30px;
+}
+
+.btn-menu-mob .line-menu-mob-2{
+    width: 20px;
+}
+
+.btn-menu-mob .line-menu-mob-1.ativo1{
+    transform: rotate(45deg) translate(30%);
+    z-index: 1000;
+}
+
+.btn-menu-mob .line-menu-mob-2.ativo2{
+    width: 30px;
+    transform: rotate(-45deg) translate(30%);
+    z-index: 1000;
+}
+
+/* Links */
+.menu-mobile{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: #000000ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+    z-index: 500;
+}
+
+.menu-mobile nav{
+    width: 80%;
+}
+
+.menu-mobile nav a{
+    display: block;
+    font-size: 1.3rem;
+    color: var(--branco);
+    padding: 0.7rem 0;
+    transition: 0.2s;
+}
+
+.menu-mobile a:hover{
+    box-shadow: 0 0 20px var(--branco);
+}
+
+.menu-mobile.abrir{
+    width: 100%;
+    height: 100vh;
 }
 

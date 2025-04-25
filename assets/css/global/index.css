@@ -66,6 +66,11 @@
   
 
 @media (max-width: 768px) {
+
+  .btn-menu-mob{
+    display: block;
+  }
+
   /* Header */
   header {
     padding: 1rem;
@@ -73,6 +78,10 @@
   
   .logo {
     font-size: 2rem;
+  }
+
+  .nav-list{
+    display: none;
   }
   
   .nav-list a {
