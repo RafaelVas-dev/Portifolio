@@ -11,11 +11,18 @@ let body = document.querySelector('body');
 btnMenu.addEventListener('click', () => {
     linha1.classList.toggle('ativo1')
     linha2.classList.toggle('ativo2')
+
     menuMobile.classList.toggle('abrir')
+
+    body.classList.toggle('no-overflow')
+
 });
 
 links.addEventListener('click', () => {
+
     linha1.classList.remove('ativo1')
     linha2.classList.remove('ativo2')
     menuMobile.classList.remove('abrir')
-})
+
+    body.classList.remove('no-overflow')
+});
