@@ -1,17 +1,13 @@
 /*------------- Seção Projeos --------------*/
 .project-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    flex-direction: column;
-    padding: 20px;
-    margin: 5rem auto 2rem;
 }
 
 .proje-titulo{
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin: 3rem 0 0;
 }
 
 .proje-titulo h1{
@@ -42,6 +38,7 @@
     background-color: var(--fundo);
     max-width: 26rem;
     width: 100%;
+    margin: 2rem auto;
 }
 
 .proje-image {

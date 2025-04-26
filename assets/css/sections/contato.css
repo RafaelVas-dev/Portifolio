@@ -45,10 +45,12 @@
     align-items: center;
     justify-content: center;
     border: 1px solid var(--borda);
+    transition: 0.4s;
 }
 
 .link-cont a:hover{
     background-image: linear-gradient(to right, #075E54, #128C7E, #25D366);
+    transform: translateY(-10px);
 }
 
 .link-cont i{
