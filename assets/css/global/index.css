@@ -47,6 +47,10 @@
   .proje-conteiner {
     flex-wrap: wrap;
     justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem auto;
   }
   
   .proje-card {
@@ -96,6 +100,16 @@
   }
   
   /* Seção Projetos */
+
+  .proje-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem auto;    
+  }
+
   .proje-card{
     max-width: 90%;
     margin: 0 auto;
