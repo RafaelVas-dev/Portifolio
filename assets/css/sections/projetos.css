@@ -1,6 +1,7 @@
 /*------------- Seção Projeos --------------*/
 .project-header{
     text-align: center;
+    margin: 2rem auto;
 }
 
 .proje-titulo{
@@ -28,7 +29,7 @@
 .proje-conteiner{
     display: flex;
     gap: 1.5rem;
-    margin: 2rem;
+    margin: 2rem auto;
 }
 
 .proje-card{
