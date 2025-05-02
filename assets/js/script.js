@@ -1,6 +1,6 @@
 // ===== Menu Mobile =====
 
-let btnMenu  = document.querySelector('#btn-menu-mob');
+let btnMenu  = document.querySelector ('#btn-menu-mob');
 let linha1 = document.querySelector('.line-menu-mob-1');
 let linha2 = document.querySelector('.line-menu-mob-2');
 let menuMobile = document.querySelector('#menu-mobile');
