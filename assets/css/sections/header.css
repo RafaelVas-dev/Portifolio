@@ -89,7 +89,7 @@ header{
     color: var(--branco);
     padding: 10px;
     font-weight: 400;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
 .ativo, nav a:hover{
@@ -97,7 +97,7 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(to right, var(--cor1),var(--cor2),var(--cor3));
-    border-bottom: 2px solid var(--borda);
+    border-bottom: 1px solid var(--borda);
 }
 
 /*--------- Header Mobile -----------*/
@@ -165,7 +165,7 @@ header{
     font-size: 1.3rem;
     color: var(--branco);
     padding: 0.7rem 0;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .menu-mobile a:hover{
