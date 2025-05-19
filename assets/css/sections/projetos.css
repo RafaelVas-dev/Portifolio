@@ -12,7 +12,7 @@
 }
 
 .proje-titulo h1{
-    padding: 20px;
+    padding: 1rem 0;
     font-size: 35px;
 }
 
@@ -27,45 +27,46 @@
 }
 
 .proje-conteiner{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
     gap: 20px;
-    padding: 20px;
 }
 
 .proje-card{
+    width: 300px;
+    height: 500px;
     text-align: center;
     border-radius: 10px;
-    overflow: hidden;
     border: 1px solid var(--borda);
     background-color: var(--fundo);
-    width: 100%;
-    margin: 2rem auto;
 }
 
 .proje-image {
     border-radius: 5px;
-    margin: 1rem;
+    margin: 0.7rem;
     overflow: hidden;
+    width: auto;
+    height: 180px;
 }
 
 .proje-image img{
+    border-radius: 5px;
     object-fit: cover;
     width: 100%;
-    height: auto;
+    height: 100%;
+    transition: all 0.3s ease;
 }
 
 .proje-image img:hover{
     transform: scale(1.05);
-    transition: all 0.3s ease;
 }
 
 .proje-content{
-    padding: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    height: 130px;
+    padding: 1rem;
+    height: 120px;
 }
 
 .proje-content h3{
@@ -109,8 +110,6 @@
 }
 
 .proje-links i{
-    display: flex;
-    align-items: center;
     float: left;
     font-size: 20px;
     margin-right: 5px;
