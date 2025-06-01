@@ -64,11 +64,23 @@ header{
     font-size: 2rem;
     color: var(--branco);
     margin: 1.3rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3),var(--cor1));
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
     transition: all 0.3s ease;
 }
 
-.logo:hover{
-    transform: scale(1.01);
+/* Animação do Titulo */
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
 }
 
 .nav-list{

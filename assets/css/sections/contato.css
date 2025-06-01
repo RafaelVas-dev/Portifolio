@@ -46,13 +46,18 @@
     transition: 0.4s;
 }
 
-.link-cont a:hover{
+.link-cont a.what:hover{
     background-image: linear-gradient(to right, #075E54, #128C7E, #25D366);
     transform: translateY(-10px);
 }
 
 .link-cont a.inst:hover{
     background-image: linear-gradient(55deg, #FFD600, #FF7A00, #FF0069, #D300C5, #7638FA);
+    transform: translateY(-10px);
+}
+
+.link-cont a.email:hover{
+    background-image: linear-gradient(to bottom, #f00, #e21313, #e42222);
     transform: translateY(-10px);
 }
 

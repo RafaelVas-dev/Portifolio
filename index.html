@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Basso Vas" />
     <meta name="description" content="Portifólio de Rafael Vas">
-    <!-- Link Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
     <!-- Link CSS -->
     <link rel="stylesheet" href="assets/css/global/index.css">
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="assets/imgs/RV.png" type="image/x-icon">
+    <!-- Link Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!----- Biblioteca AOS ----->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portifólio | Rafael Vas</title>
 </head>
 <body>
 
-    <!---- Header ---->
+    <!--===== Header =====-->
     <header>
-        <a href="#" class="logo">Rafael Vas</a>
+        <a href="#" class="logo"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Rafael Vas</a>
 
-        <nav class="nav-list">
+        <nav class="nav-list"  data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
             <ul>
                 <li><a href="#" class="ativo">Início</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
@@ -26,7 +30,7 @@
             </ul>
         </nav>
 
-        <div class="btn-menu-mob" id="btn-menu-mob">
+        <div class="btn-menu-mob" id="btn-menu-mob" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
             <div class="line-menu-mob-1"></div>
             <div class="line-menu-mob-2"></div>
         </div>
@@ -44,11 +48,11 @@
 
     </header>
 
-    <!---- Main ---->
+    <!--===== Main =====-->
     <main>
 
         <!-------- Início -------->
-        <section class="inicio">
+        <section class="inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
 
             <div class="inicio-desc">
 
@@ -77,7 +81,7 @@
                 <h1><i class='bx bx-code-alt' ></i>Habilidades / Skills<i class='bx bx-code-alt'></i></h1>
             </div>
 
-            <div class="hab-conteiner">
+            <div class="hab-conteiner"  data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
 
                 <div class="hab-skill">
                     <i class='bx bxl-html5' id="ht"></i>
@@ -114,7 +118,7 @@
             <div class="proje-conteiner">
 
                 <!--Projeto 1-->
-                <div class="proje-card">
+                <div class="proje-card" data-aos="fade-up" data-aos-delay="0">
 
                     <div class="proje-image">
                         <img src="assets/imgs/projetoLP.png" alt="Projeto Style Motors">
@@ -144,7 +148,7 @@
 
 
                 <!--Projeto 2-->
-                <div class="proje-card">
+                <div class="proje-card" data-aos="fade-up" data-aos-delay="100">
 
                     <div class="proje-image">
                       <img src="assets/imgs/projetoLV.png" alt="Projeto LV Estetic">
@@ -162,7 +166,7 @@
                     </div>
 
                     <div class="proje-links">
-                       <a href="https://github.com/RafaelVas-dev/ProjetoEstetic" target="_blank">
+                       <a href="https://github.com/RafaelVas-dev/LvEstetic" target="_blank">
                         <i class='bx bx-code-alt'></i>
                          Repositório
                        </a>
@@ -175,7 +179,7 @@
 
 
                 <!--Projeto 3-->
-                <div class="proje-card">
+                <div class="proje-card" data-aos="fade-up" data-aos-delay="200">
 
                     <div class="proje-image">
                       <img src="assets/imgs/projetoLogin.png" alt="Projeto Login Futurista">
@@ -206,7 +210,7 @@
 
 
                 <!-- Projeto 4 -->
-                <div class="proje-card">
+                <div class="proje-card" data-aos="fade-up" data-aos-delay="300">
 
                     <div class="proje-image">
                         <img src="assets/imgs/projetoSiteViagens.png" alt="Projeto LandingPage">
@@ -248,20 +252,27 @@
             </div>
 
             <div class="link-cont">
-                <a href="https://wa.me/5511959923496" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-                <a href="https://www.instagram.com/rafaelvasdev/" target="_blank" class="inst"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/5511959923496" target="_blank" class="what" data-aos="zoom-in" data-aos-easing="ease-in-out"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.instagram.com/rafaelvasdev/" target="_blank" class="inst" data-aos="zoom-in" data-aos-easing="ease-in-out"><i class='bx bxl-instagram'></i></a>
+                <a href="mailto:rafaelvas.dev@gmail.com" target="_blank" class="email" data-aos="zoom-in" data-aos-easing="ease-in-out"><i class="bx bx-envelope"></i></a>
             </div>
 
         </section>
         
     </main>
 
-    <!---- Footer ---->
+    <!--===== Footer =====-->
     <footer>
         <h4>Portifólio</h4>
         <p>&COPY; 2025 | Rafael Basso Vas</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
+
+    <!----- Bibliotec AOS ----->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
