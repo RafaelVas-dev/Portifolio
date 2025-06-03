@@ -6,12 +6,7 @@
     flex-direction: column;
     padding: 3rem;
     margin-top: 2.5rem;
-}
-
-.linha{
-    width: 100%;
-    background-color: var(--borda);
-    height: 1px;
+    border-top: 1px solid var(--borda);
 }
 
 .cont-header{
@@ -76,4 +71,16 @@ footer{
    padding: 5px;
    background-color: var(--fundo);
    font-size: 14px;
+}
+
+.cont::before{
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 120px;
+    left: 33%;
+    bottom: -220%;
+    background-color: var(--fundo2);
+    filter: blur(150px);
+    z-index: 0;
 }
