@@ -1,34 +1,30 @@
 /*-------- Seção Início -------*/
 
-.inicio{
-    margin-top: -50px;
-    padding: 4rem;
-}
-
-.inicio-desc{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+.inicio-cont{
     padding: 20px;
+    margin: 60px 0;
 }
 
-.inicio-desc h1{
-    font-size: 50px;
+.inicio-cont h1{
+    font-family: var(--titulo);
+    font-size: 45px;
     padding: 5px;
     line-height: 1.5em;
+    text-align: center;
 }
 
 
 /*----- Texto Animado -----*/
 .txt-animado{
+    font-family: var(--titulo);
     padding: 5px;
     font-size: 35px;
     line-height: 1.5em;
+    text-align: center;
 }
 
-.inicio-desc span{
+.inicio-cont span{
+    font-family: var(--titulo);
     position: relative;
     color: var(--letra);
 }
@@ -80,7 +76,7 @@
 
 /*----- Texto -----*/
 .inicio-info{
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px;
     line-height: 1.5rem;
     text-align: center;
@@ -89,20 +85,22 @@
 
 /*----- Links Social -----*/
 .links-social{
+    display: flex;
+    justify-content: center;
     margin: 30px 0;
     padding: 10px;
 }
 
 .links-social i{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .links-social a{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    width: 3rem;
-    height: 3rem;
+    width: 45px;
+    height: 45px;
     color: var(--branco);
     padding: 10px;
     margin-left: 20px;
@@ -117,24 +115,26 @@
 }
 
 
+
 /*----- Botão -----*/
-.inicio-desc .btn{
+.inicio-cont .btn{
+    display: block;
     cursor: pointer;
-    height: 5rem;
-    width: 23rem;
+    height: 4rem;
+    width: 20rem;
     background-color: transparent;
     color: var(--branco);
-    font-size: 25px;
-    margin-top: 10px auto 0;
+    font-size: 20px;
+    margin: 10px auto;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid var(--borda);
     transition: all 0.4s ease;
 }
 
-.inicio-desc .btn:hover{
+.inicio-cont .btn:hover{
     background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3));
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 

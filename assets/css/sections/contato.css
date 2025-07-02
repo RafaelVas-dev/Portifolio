@@ -1,5 +1,5 @@
 /*-------- Seção Contato -----------*/
-.cont{
+#contato{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,23 +9,21 @@
     border-top: 1px solid var(--borda);
 }
 
-.cont-header{
-    text-align: center;
-    font-weight: 500;
-    padding: 4rem;
-}
-
-.cont-header h1{
+#contato > h1{
+    font-family: var(--titulo);
     margin-bottom: 1rem;
-    font-size: 40px;
+    font-size: 30px;
 }
 
-.cont-info{
-    font-size: 20px;
+#contato > p{
+    font-size: 18px;
 }
 
 .link-cont{
     display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .link-cont a {
@@ -34,6 +32,7 @@
     height: 4rem;
     padding: 10px;
     border-radius: 10px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,19 +59,16 @@
 
 .link-cont i{
     font-size: 3rem;
-    color: var(--branco);
 }
 
 /*--------- Footer -----------*/
 
 footer{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   padding: 5px;
-   background-color: var(--fundo);
-   font-size: 14px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: var(--fundo);
+    font-size: 14px;
 }
 
 .cont::before{

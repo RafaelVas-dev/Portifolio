@@ -52,9 +52,9 @@
     <main>
 
         <!-------- Início -------->
-        <section class="inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <section id="inicio" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
 
-            <div class="inicio-desc">
+            <div class="inicio-cont">
 
                 <h1>Olá eu sou <span>Rafael</span></h1>
 
@@ -75,13 +75,13 @@
         </section>
 
         <!-------- Habilidades ---------->
-        <section class="habilidade" id="habilidades">
+        <section id="habilidades">
 
-            <div class="hab-titulo">
-                <h1><i class='bx bx-code-alt' ></i>Habilidades / Skills<i class='bx bx-code-alt'></i></h1>
-            </div>
+            <h1>
+                <i class='bx bx-code-alt' ></i> Habilidades / Skills<i class='bx bx-code-alt'></i>
+            </h1>
 
-            <div class="hab-conteiner"  data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
+            <div class="hab-cont"  data-aos="flip-left" data-aos-delay="100" data-aos-duration="1000">
 
                 <div class="hab-skill">
                     <i class='bx bxl-html5' id="ht"></i>
@@ -98,6 +98,11 @@
                     <p>JavaScript</p>
                 </div>
 
+                <div class="hab-skill">
+                    <i class="bx bxl-figma"></i>
+                    <p>Figma</p>
+                </div>
+
             </div>
 
         </section>
@@ -106,13 +111,16 @@
         <section id="projetos">
 
             <div class="project-header">
-                <div class="proje-titulo">
+
+                <div class="project-title">
                     <h1>Projetos</h1><i class='bx bxs-award'></i>
                 </div>
-                <p class="proje-info">
+
+                <p>
                     Aqui estão alguns dos projetos que desenvolvi. Cada projeto representa um desafio único 
                     que me ajudou a crescer como desenvolvedor.
                 </p>
+
             </div>
 
             <div class="proje-conteiner">
@@ -126,7 +134,7 @@
 
                     <div class="proje-content">
                        <h3>Style Motors</h3>
-                       <p class="proje-descricao">Projeto de uma Landing Page sobre uma marca de customização de carros</p>
+                       <p class="proje-info">Projeto de uma Landing Page sobre uma marca de customização de carros</p>
                     </div>
 
                     <div class="proje-tags">
@@ -156,7 +164,7 @@
 
                     <div class="proje-content">
                        <h3 class="proje-titulo">LV Estetic</h3>
-                       <p class="proje-descricao">Projeto de um site institucional, feito para divulgar uma marca de estética automotiva</p>
+                       <p class="proje-info">Projeto de um site institucional, feito para divulgar uma marca de estética automotiva</p>
                     </div>
 
                     <div class="proje-tags">
@@ -187,7 +195,7 @@
 
                     <div class="proje-content">
                        <h3 class="proje-titulo">Login Futurista</h3>
-                       <p class="proje-descricao">Projeto de um Login Futurista</p>
+                       <p class="proje-info">Projeto de uma pagina de Login Futurista</p>
                     </div>
 
                     <div class="proje-tags">
@@ -218,7 +226,7 @@
 
                     <div class="proje-content">
                        <h3>Website Viagens</h3>
-                       <p class="proje-descricao">Projeto de um Website de viagens responsivo</p>
+                       <p class="proje-info">Projeto de um Website de viagens responsivo</p>
                     </div>
 
                     <div class="proje-tags">
@@ -242,12 +250,10 @@
         </section>
 
         <!--------- Contato ---------->
-        <section id="contato" class="cont">
+        <section id="contato">
             
-            <div class="cont-header">
-                <h1>Muito Obrigado pela sua visita e pelo seu tempo!</h1>
-                <p class="cont-info">Interessado em trabalhar junto? Entre em contato comigo através dos links abaixo</p>
-            </div>
+            <h1>Muito Obrigado pela sua visita e pelo seu tempo!</h1>
+            <p class="cont-info">Interessado em trabalhar junto? Entre em contato comigo através dos links abaixo</p>
 
             <div class="link-cont">
 

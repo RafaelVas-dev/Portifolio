@@ -1,28 +1,31 @@
 /*------------- Seção Projeos --------------*/
 .project-header{
     text-align: center;
-    margin: 2rem auto;
-}
-
-.proje-titulo{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 3rem 0 0;
+    flex-direction: column;
 }
 
-.proje-titulo h1{
-    padding: 1rem 0;
-    font-size: 35px;
+.project-title {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
 }
 
-.proje-titulo i{
+.project-title h1{
+    font-family: var(--titulo);
+}
+
+.project-title i{
     color: var(--letra);
-    font-size: 40px;
+    padding-left: 10px;
+    font-size: 30px;
 }
 
-.proje-info{
-    font-size: 20px;
+.project-header p{
+    font-size: 18px;
     text-align: center;
 }
 
@@ -31,7 +34,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 1rem 0;
+    margin: 40px 0;
     gap: 20px;
 }
 
@@ -53,7 +56,6 @@
 }
 
 .proje-image img{
-    border-radius: 5px;
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -71,14 +73,13 @@
 
 .proje-content h3{
     font-size: 25px;
-    color: var(--letra);
     margin-top: 0.25rem;
 }
 
-.proje-descricao{
+.proje-info{
     text-align: start;
-    font-size: 18px;
-    margin-top: 0.25rem;
+    font-size: 15px;
+    margin-top: 10px;
 }
 
 .proje-tags{
@@ -97,17 +98,17 @@
 }
 
 .proje-links{
-    margin-top: 1rem;
+    margin-top: 30px;
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
+    justify-content: space-evenly;
 }
 
 .proje-links a{
-    padding: 1.2rem;
+    font-size: 15px;
+    padding: 18px;
     color: var(--branco);
     border-radius: 10px;
-    border: 2px solid var(--borda);
+    border: 1px solid var(--borda);
 }
 
 .proje-links i{
@@ -123,6 +124,6 @@
 
 .proje-links a:hover,
 .proje-links a:focus {
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: 0.3s ease;
 }

@@ -1,68 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-
-
-/*--------- CSS Global ---------*/
-
-:root{
-    /*paleta de cores*/
-
-    --bg-color: #0D0D0D;
-    --fundo: #2928407a;
-    --fundo2: #3e3c73;
-    --borda: #4E458C;
-    --letra: #8449BF;
-    --branco: #fff;
-
-    /*Degráde*/
-    --cor1: #7936B7;
-    --cor2: #A22895;
-    --cor3: #1bb7ff;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    font-family: "Red Hat Display", sans-serif;
-}
-
-html{
-    scroll-behavior: smooth;
-}
-
-body{
-    overflow-x: hidden;
-    background-color: var(--bg-color);
-    color: var(--branco);
-}
-
-a{
-    text-decoration: none;
-}
-
-ul{
-    list-style: none;
-}
-
 
 /*--------- Header -----------*/
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 100;
+    z-index: 50;
     top: 0;
     left: 0;
-    margin-top: 10px;
-    width: 100%;
     position: relative;
 }
 
 .logo{
-    cursor: pointer;
+    font-family: var(--titulo);
     font-size: 2rem;
-    color: var(--branco);
     margin: 1.3rem;
     background-clip: text;
     -webkit-background-clip: text;
@@ -83,23 +33,16 @@ header{
     }
 }
 
-.nav-list{
-    margin-right: 4rem;
-    padding: 20px;
-    transition: all 0.4s ease;
-}
-
 .nav-list ul{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 30px;
+    margin-right: 20px;
 }
 
 .nav-list a{
-    font-size: 1.1rem;
-    margin-left: 4rem;
+    font-size: 1rem;
     color: var(--branco);
-    padding: 10px;
+    padding: 5px 10px;
     font-weight: 400;
     transition: 0.3s;
 }
