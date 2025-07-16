@@ -22,22 +22,21 @@
 .link-cont{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    gap: 20px;
+    margin-top: 40px;
     width: 100%;
 }
 
 .link-cont a {
     color: var(--branco);
-    width: 8rem;
-    height: 4rem;
-    padding: 10px;
+    width: 150px;
+    padding: 5px 0;
     border-radius: 10px;
     font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 0 0.5rem;
     border: 1px solid var(--borda);
     transition: 0.4s;
 }
@@ -58,7 +57,7 @@
 }
 
 .link-cont i{
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 /*--------- Footer -----------*/
@@ -66,19 +65,8 @@
 footer{
     display: flex;
     justify-content: center;
+    gap: 5px;
     padding: 5px;
     background-color: var(--fundo);
     font-size: 14px;
-}
-
-.cont::before{
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 120px;
-    left: 33%;
-    bottom: -220%;
-    background-color: var(--fundo2);
-    filter: blur(150px);
-    z-index: 0;
 }

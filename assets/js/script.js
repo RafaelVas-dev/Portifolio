@@ -26,3 +26,15 @@ links.addEventListener('click', () => {
 
     body.classList.remove('no-overflow')
 });
+
+
+
+
+// ===== Modos Light e Dark =====
+const btnInteruptor = document.querySelector('#inter');
+
+btnInteruptor.addEventListener('click', () => {
+
+    btnInteruptor.classList.toggle('light');
+    body.classList.toggle('light');
+})

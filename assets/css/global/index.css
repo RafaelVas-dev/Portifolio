@@ -35,13 +35,13 @@
 *{
   margin: 0;
   padding: 0;
-  outline: none;
-  border: none;
+  box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
 }
 
 html{
   scroll-behavior: smooth;
+  color-scheme: dark light;
 }
 
 body{
@@ -268,15 +268,7 @@ ul{
     margin: 5px 0;
   }
 
-  .link-cont a.what:hover{
-    transform: translateX(-10px);
-  }
-
-  .link-cont a.inst:hover{
-    transform: translateX(-10px);
-  }
-
-  .link-cont a.email:hover{
+  .link-cont a.what:hover, .link-cont a.inst:hover, .link-cont a.email:hover{
     transform: translateX(-10px);
   }
 
@@ -284,8 +276,6 @@ ul{
     font-size: 1rem;
   }
 
-
-  
 }
   
 
