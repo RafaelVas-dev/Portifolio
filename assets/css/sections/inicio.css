@@ -117,11 +117,12 @@
 /*----- Modos Light e Dark -----*/
 .inter{
     cursor: pointer;
+    transition: .4s;
 }
 
 .inter:hover{
-    background: #ebebeb;
-    color: #000;
+    background: var(--bg-light);
+    color: var(--preto);
 }
 
 .inter > .bx.bx-moon{
@@ -129,19 +130,59 @@
 }
 
 
-/* Modo Light */
-.inter.light > .bx.bx-moon{
+/* ==== Modo Light ==== */
+body.light-mode{
+    background: var(--bg-light);
+
+    --branco: var(--preto);
+    --fundo: transparent;
+}
+
+
+/* Modo Light do texto animado */
+body.light-mode .txt-animado span::after{
+    background-color: var(--bg-light);
+    border-left: 2px solid var(--bg-light);
+}
+
+
+/* Modo light do conteiner de habilidades */
+body.light-mode .hab-cont{
+    border: 2px solid var(--borda);
+}
+
+
+/* Modo light dos cards de projetos */
+body.light-mode .proje-card{
+    box-shadow: -3px 5px 10px var(--letra);
+}
+
+body.light-mode .proje-links .button-ext{
+    color: var(--bg-light);
+    font-weight: 800;
+
+}
+
+/* Modo light do Footer */
+body.light-mode footer{
+    border-top: 1px solid var(--borda);
+}
+/* ========= */
+
+
+body.light-mode .inter:hover{
+    background: var(--preto);
+    color: var(--bg-light);
+}
+
+
+body.light-mode .inter > .bx.bx-moon{
     display: block;
 }
 
-.inter.light > .bx.bx-sun{
+body.light-mode .inter > .bx.bx-sun{
     display: none;
 }
-
-body.light{
-}
-
-
 
 
 /*----- Botão -----*/

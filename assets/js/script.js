@@ -31,10 +31,37 @@ links.addEventListener('click', () => {
 
 
 // ===== Modos Light e Dark =====
-const btnInteruptor = document.querySelector('#inter');
 
-btnInteruptor.addEventListener('click', () => {
+// Seleciona o botão de troca de tema
+const inter = document.getElementById('inter');
 
-    btnInteruptor.classList.toggle('light');
-    body.classList.toggle('light');
-})
+// Aplica o tema salvo no localStorage, se existir
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme === 'light') {
+  body.classList.add('light-mode');
+}
+
+// Atualiza ícones (sol e lua) com base no tema atual
+function updateIcons() {
+  const sunIcon = inter.querySelector('.bx-sun');
+  const moonIcon = inter.querySelector('.bx-moon');
+  const isLight = body.classList.contains('light-mode');
+
+  sunIcon.style.display = isLight ? 'none' : 'inline';
+  moonIcon.style.display = isLight ? 'inline' : 'none';
+}
+
+// Função para alternar o tema
+function toggleTheme() {
+  const isLight = body.classList.toggle('light-mode');
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  updateIcons();
+}
+
+// Aplica os ícones corretos ao carregar
+updateIcons();
+
+// Evento de clique no botão
+inter.addEventListener('click', toggleTheme);
+
